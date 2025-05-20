@@ -15,7 +15,7 @@ function App() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("http://localhost:5000/upload", formData); // Change this in production
+      const res = await axios.post("https://resume-extractor-jlfa.onrender.com", formData); // Change this in production
       setSkills(res.data.skills);
     } catch (err) {
       console.error("Upload error", err);
